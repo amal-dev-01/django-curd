@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}add{% endblock title %}
+{% block body %}
+<h2>Add Employee</h2>
+<a href="{% url 'emp_list' %}">View List</a>
+<form action="" method="post">
+    {% csrf_token %}
+    {{form}}
+<button type="submit" class="btn-success">sumbit</button>
+
+</form>
+
+
+
+
+{% endblock body %}
